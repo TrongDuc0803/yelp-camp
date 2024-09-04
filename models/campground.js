@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 const Review = require('./review');
-const { coordinates } = require('@maptiler/client');
-const { func } = require('joi');
 const Schema = mongoose.Schema;
 
 const ImageSchema = new Schema ({
