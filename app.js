@@ -24,7 +24,6 @@ const mongoSanitize = require('express-mongo-sanitize');
 
 const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp'
 const app = express();
-const port = 3000;
 
 const cloudinaryCloudName = process.env.CLOUDINARY_CLOUD_NAME;
 const cloudinaryUrl = `https://res.cloudinary.com/${cloudinaryCloudName}/`;
@@ -151,6 +150,7 @@ app.use((err , req, res, next) =>{
   res.status(statusCode).render('error',{err});
 })
 
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
 });
