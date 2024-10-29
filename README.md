@@ -6,7 +6,7 @@
 ## Demo
 
 Check out the live app here: [YelpCamp on Heroku]
-(https://yelp-camp.herokuapp.com/](https://nameless-earth-48541-96eece147f42.herokuapp.com/campgrounds))
+( https://nameless-earth-48541-96eece147f42.herokuapp.com )
 
 ## Features
 
